@@ -6,6 +6,7 @@ from keras.callbacks import Callback
 from keras import backend as K
 import tensorflow as tf
 
+tf.compat.v1.disable_eager_execution()
 
 class L0Loss:
     def __init__(self):
